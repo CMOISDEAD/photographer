@@ -12,7 +12,7 @@ export const Providers = ({ children }: Props) => {
 
   return (
     <NextUIProvider navigate={navigate}>
-      <NextThemesProvider attribute="class" defaultTheme="light">
+      <NextThemesProvider attribute="class">
         {children}
       </NextThemesProvider>
     </NextUIProvider>

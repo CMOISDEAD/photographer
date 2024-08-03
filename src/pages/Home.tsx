@@ -1,7 +1,13 @@
+import { Header } from "../components/sections/Header"
+
 export const Home = () => {
   return (
     <div>
-      <p>Angeles</p>
+      <Header />
+
+      <div className="my-5 h-72" />
+      <div className="my-5 h-72" />
+      <div className="my-5 h-72" />
     </div>
   )
 }
