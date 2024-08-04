@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion"
 import { Outlet } from "react-router-dom"
 
-import { Navbar } from "../Navbar"
+import { Navbar } from "./Navbar"
 
 const pageVariants = {
   initial: {
