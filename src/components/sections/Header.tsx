@@ -3,10 +3,9 @@ import { ArrowDown } from "lucide-react"
 
 export const Header = () => {
   return (
-    <div className="p-5 h-[67vh] flex flex-col justify-between">
-
-      <div className="w-full flex justify-between">
-        {[1, 2, 3, 4, 5].map((i) => (
+    <div className="p-5 h-[90vh] flex flex-col justify-between md:h-[67vh]">
+      <div className="w-full flex flex-1 flex-col content-center items-center justify-center gap-2 md:flex-row md:justify-end">
+        {[1].map((i) => (
           <Link key={i} href="#" className="relative" >
             <Image isZoomed radius="none" src="https://olgaprudka.com/wp-content/uploads/2022/07/dblack-2022-05-03-152639.142-166x208.jpg" alt="main image" />
             <p className="absolute w-fit mx-auto bottom-1 right-0 left-0 text-xs uppercase z-50 text-white italic">

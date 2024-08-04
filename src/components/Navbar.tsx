@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { Logs } from "lucide-react";
 
 const duration = 0.2;
 
@@ -38,13 +39,18 @@ export const Navbar = () => {
   }, [scrollY, controlsH1, controlsH6]);
 
   return (
-    <motion.nav className="w-full p-5 sticky top-0 flex justify-between">
-      <header>
+    <motion.nav className="w-full p-5 sticky top-0 flex justify-between items-center content-center md:items-start">
+      <header className="md:hidden">
+        <motion.h1 className="uppercase text-xl">
+          angeles
+        </motion.h1>
+      </header>
+      <header className="hidden md:block">
         <motion.h1
           animate={controlsH1}
           initial={{ fontSize: '8rem' }}
-          className="font-bold uppercase"
           style={{ lineHeight: 1 }}
+          className="font-bold uppercase"
         >
           angeles
         </motion.h1>
@@ -55,7 +61,7 @@ export const Navbar = () => {
           Photographer based in Los Angeles, California. Specializing in portrait, lifestyle, and event photography.
         </motion.h6>
       </header>
-      <nav>
+      <nav className="hidden md:block">
         <ul className="flex content-center items-center gap-5">
           <li>
             <Link href="/" className="text-xs uppercase text-inherit">portfolio</Link>
@@ -71,6 +77,10 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <Button isIconOnly variant="light" className="md:hidden">
+        <Logs />
+      </Button>
+
     </motion.nav>
   );
 };
