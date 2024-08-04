@@ -37,8 +37,8 @@ export const Footer = () => {
 
   return (
     <footer className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between">
-      <div className="overflow-hidden h-fit">
-        <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-7xl md:text-9xl uppercase font-bold">Footer</m.h3>
+      <div className="overflow-hidden h-fit py-2">
+        <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-7xl md:text-9xl uppercase font-bold">Contact</m.h3>
       </div>
       <div className="w-full flex gap-4 justify-between items-end">
         <div className="text-default-500">

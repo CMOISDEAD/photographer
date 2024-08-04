@@ -3,7 +3,7 @@ import { ArrowDown } from "lucide-react"
 
 export const Header = () => {
   return (
-    <div className="p-5 h-[90vh] flex flex-col justify-between md:h-[67vh]">
+    <div className="p-5 h-[90dvh] flex flex-col justify-between md:h-[67dvh]">
       <div className="w-full flex flex-1 flex-col content-center items-center justify-center gap-2 md:flex-row md:justify-end">
         {[1].map((i) => (
           <Link key={i} href="#" className="relative w-44 z-0">
