@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { Button, Link } from "@nextui-org/react";
-import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
+import { Link } from "@nextui-org/react";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const duration = 0.2;
 
@@ -43,6 +42,7 @@ export const Navbar = () => {
       <header>
         <motion.h1
           animate={controlsH1}
+          initial={{ fontSize: '8rem' }}
           className="font-bold uppercase"
           style={{ lineHeight: 1 }}
         >
@@ -58,13 +58,13 @@ export const Navbar = () => {
       <nav>
         <ul className="flex content-center items-center gap-5">
           <li>
-            <Link href="#" className="text-xs uppercase text-inherit">portfolio</Link>
+            <Link href="/" className="text-xs uppercase text-inherit">portfolio</Link>
           </li>
           <li>
-            <Link href="#" className="text-xs uppercase text-inherit">about</Link>
+            <Link href="/" className="text-xs uppercase text-inherit">about</Link>
           </li>
           <li>
-            <Link href="#" className="text-xs uppercase text-inherit">contact</Link>
+            <Link href="/contact" className="text-xs uppercase text-inherit">contact</Link>
           </li>
           <li>
             <ThemeSwitcher />
@@ -76,24 +76,3 @@ export const Navbar = () => {
 };
 
 
-
-const ThemeSwitcher = () => {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-
-  if (!mounted) return null
-
-  const handleSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
-
-  return (
-    <Button isIconOnly size="sm" variant="light" onPress={handleSwitch}>
-      {theme === 'dark' ? <Sun /> : <Moon />}
-    </Button>
-  )
-} 
