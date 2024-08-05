@@ -16,7 +16,7 @@ export const Header = () => {
       </div>
 
       <div className="w-full h-fit flex justify-between">
-        <div className="text-xs text-default-500 uppercase">
+        <div className="text-xs uppercase">
           <p>contact:</p>
           <Link href="#" className="text-inherit text-xs">
             angeles@email.com
@@ -26,7 +26,7 @@ export const Header = () => {
           </p>
         </div>
 
-        <div className="text-xs text-default-500 uppercase flex content-center items-center gap-7">
+        <div className="text-xs uppercase flex content-center items-center gap-7">
           <p>scroll down <br />
             to explore website</p>
           <ArrowDown className="animate-bounce" />

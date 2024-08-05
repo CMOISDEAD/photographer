@@ -48,15 +48,12 @@ export const Navbar = () => {
       <nav className="hidden md:block">
         <ul className="flex content-center items-center gap-5">
           <li>
-            <Link href="/" className="text-xs uppercase text-inherit">portfolio</Link>
-          </li>
-          <li>
-            <Link href="/" className="text-xs uppercase text-inherit">about</Link>
+            <Link href="/" className="text-xs uppercase text-inherit">Works</Link>
           </li>
           <li>
             <Link href="/contact" className="text-xs uppercase text-inherit">contact</Link>
           </li>
-          <li>
+          <li className="hidden">
             <ThemeSwitcher />
           </li>
         </ul>

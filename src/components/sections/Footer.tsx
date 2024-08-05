@@ -8,7 +8,8 @@ const list = {
     opacity: 1,
     transition: {
       when: 'beforeChildren',
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
+      duration: 0.1,
     },
   },
   hidden: {
@@ -36,9 +37,9 @@ export const Footer = () => {
   const opacitySpring = useSpring(opacity, { duration })
 
   return (
-    <footer className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between bg-[url(./mesh.png)] bg-no-repeat bg-cover">
+    <footer className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between">
       <div className="overflow-hidden h-fit py-2">
-        <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-6xl md:text-9xl uppercase font-bold">Contact</m.h3>
+        <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-6xl md:text-9xl uppercase font-bold">Contacto</m.h3>
       </div>
       <div className="w-full flex gap-4 justify-between items-end">
         <div>

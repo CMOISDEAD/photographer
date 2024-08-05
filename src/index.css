@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: url("./mesh-alt.png") center center fixed no-repeat;
+  background-size: cover;
+}

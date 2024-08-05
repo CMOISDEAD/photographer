@@ -25,9 +25,11 @@ export const Layout = () => {
       animate="in"
       exit="out"
       variants={pageVariants}
-      transition={{ duration: 0.5 }}>
+      transition={{ duration: 0.5 }}
+      className="min-h-screen"
+    >
       <Navbar />
-      <main className="container mx-auto">
+      <main>
         <Outlet />
       </main>
     </m.div>
