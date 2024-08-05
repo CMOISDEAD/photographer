@@ -36,12 +36,12 @@ export const Footer = () => {
   const opacitySpring = useSpring(opacity, { duration })
 
   return (
-    <footer className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between">
+    <footer className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between bg-[url(./mesh.png)] bg-no-repeat bg-cover">
       <div className="overflow-hidden h-fit py-2">
-        <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-7xl md:text-9xl uppercase font-bold">Contact</m.h3>
+        <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-6xl md:text-9xl uppercase font-bold">Contact</m.h3>
       </div>
       <div className="w-full flex gap-4 justify-between items-end">
-        <div className="text-default-500">
+        <div>
           <p className="text-md md:text-lg">Angeles Vargas, 2024</p>
           <p className="text-xs md:text-sm">
             angeles@email.com
