@@ -1,50 +1,134 @@
-export const works = [
+export const experiences = [
+  "Liga de patinaje del Quindio",
+  "Club de patinaje Correpatin",
+  "Club de patinaje Kayros",
+  "Academia de Ingles ASI",
+  "English Bros",
+  "Restaurante !QueKuka!",
+  "Escuala Educativa Corinto"
+]
+
+
+export const videos = [
   {
-    image: 'https://olgaprudka.com/wp-content/uploads/2022/07/Singularity-6-443x558.jpg',
-    title: "Singularity"
+    src: `comida.mp4`,
+    title: "Video Publicitario",
   },
   {
-    image: "https://olgaprudka.com/wp-content/uploads/2022/07/1-scaled.jpg",
-    title: "Culture of Freedom"
+    src: "kayros.mp4",
+    title: "Kayros",
   },
   {
-    image: "https://olgaprudka.com/wp-content/uploads/2022/07/dblack-2022-05-03-152639.142-443x558.jpg",
-    title: "Dasha"
+    src: "correpatin.mp4",
+    title: "Correpatin",
   },
   {
-    image: "https://olgaprudka.com/wp-content/uploads/2023/03/4-1-443x558.jpg",
-    title: "Pachara"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2023/03/02-443x558.jpg",
-    title: "Untitled Y"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2023/03/11-443x558.jpg",
-    title: "Untitled B"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2023/03/IMG_3179-443x558.jpg",
-    title: "Layers"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2023/01/0Q1A8134-443x558.jpg",
-    title: "Desires"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2022/07/2021-03-31-08h10m37s-scaled.jpg",
-    title: "Enot"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2022/07/0Q1A0969.jpg",
-    title: "African Flower"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2022/07/0Q1A2150-443x558.jpg",
-    title: "Biosfera"
-  },
-  {
-    image: "https://olgaprudka.com/wp-content/uploads/2022/07/0Q1A6517-443x558.jpg",
-    title: "Tarima"
+    src: "pumas.mp4",
+    title: "Pumas",
   },
 ]
+
+export const images =
+  [
+    {
+      "src": "1.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "2.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "3.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "4.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "5.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "6.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "7.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "8.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "9.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "10.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "11.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "12.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "13.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "14.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "15.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "16.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "17.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "18.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "19.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "20.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "21.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "22.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "23.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "24.jpg",
+      "title": "Pachara"
+    },
+    {
+      "src": "25.jpg",
+      "title": "Pachara"
+    }
+  ]
+

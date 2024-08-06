@@ -10,8 +10,8 @@ export const Navbar = () => {
   const [fontSize, setFontSize] = useState<number>(8);
   const { scrollYProgress } = useScroll();
 
-  const size = useTransform(scrollYProgress, [0, 0.2], [8, 3]);
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  const size = useTransform(scrollYProgress, [0, 0.08], [8, 3]);
+  const opacity = useTransform(scrollYProgress, [0, 0.08], [1, 0]);
 
   const opacitySpring = useSpring(opacity, { duration });
 
