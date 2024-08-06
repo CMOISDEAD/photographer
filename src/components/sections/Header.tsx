@@ -1,4 +1,4 @@
-import { Image, Link } from "@nextui-org/react"
+import { Link } from "@nextui-org/react"
 import { ArrowDown } from "lucide-react"
 
 export const Header = () => {
