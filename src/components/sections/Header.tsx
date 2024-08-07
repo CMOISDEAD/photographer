@@ -8,18 +8,18 @@ export const Header = () => {
 
       <div className="w-full h-fit flex justify-between">
         <div className="text-xs uppercase">
-          <p>contact:</p>
-          <Link href="#" className="text-inherit text-xs">
-            angeles@email.com
+          <p>contacto:</p>
+          <Link isExternal showAnchorIcon href="mailto:angelesgonzalez5503@gmail.com" className="text-inherit text-xs font-bold">
+            angelesgonzalez5503@gmail.com
           </Link>
           <p>
-            © Angeles Photography 2024
+            © Angeles Fotografia 2024
           </p>
         </div>
 
         <div className="text-xs uppercase flex content-center items-center gap-7">
-          <p>scroll down <br />
-            to explore website</p>
+          <p>Desliza hacia abajo<br />
+            para ver mas</p>
           <ArrowDown className="animate-bounce" />
         </div>
       </div>

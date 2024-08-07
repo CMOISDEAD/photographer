@@ -41,17 +41,20 @@ export const Navbar = () => {
           className="text-xs w-64"
           style={{ opacity: opacitySpring }}
         >
-          Photographer based in Los Angeles, California. Specializing in portrait, lifestyle, and event photography.
+          Fotografa con experiencia en redes sociales, eventos y fotografia deportiva.
         </motion.h6>
       </header>
 
       <nav className="hidden md:block">
         <ul className="flex content-center items-center gap-5">
           <li>
-            <Link href="/" className="text-xs uppercase text-inherit">Works</Link>
+            <Link href="#videos" className="text-xs uppercase text-inherit">Videos</Link>
           </li>
           <li>
-            <Link href="/contact" className="text-xs uppercase text-inherit">contact</Link>
+            <Link href="#works" className="text-xs uppercase text-inherit">Experiencia</Link>
+          </li>
+          <li>
+            <Link href="#contact" className="text-xs uppercase text-inherit">Contacto</Link>
           </li>
           <li className="hidden">
             <ThemeSwitcher />

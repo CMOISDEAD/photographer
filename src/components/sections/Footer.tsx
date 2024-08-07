@@ -37,7 +37,7 @@ export const Footer = () => {
   const opacitySpring = useSpring(opacity, { duration })
 
   return (
-    <footer className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between">
+    <footer id="contact" className="h-screen mt-16 px-5 pt-20 pb-5 flex flex-col justify-between">
       <div className="overflow-hidden h-fit py-2">
         <m.h3 style={{ y: ySpring, opacity: opacitySpring }} className="font-lora text-6xl md:text-9xl uppercase font-bold">Contacto</m.h3>
       </div>
@@ -45,10 +45,11 @@ export const Footer = () => {
         <div>
           <p className="text-md md:text-lg">Angeles Vargas, 2024</p>
           <p className="text-xs md:text-sm">
-            angeles@email.com
+            angelesgonzalez5503@gmail.com
           </p>
         </div>
         <m.ul
+          className="hidden"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}

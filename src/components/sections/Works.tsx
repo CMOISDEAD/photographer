@@ -8,10 +8,10 @@ const CDN_PATH = `${import.meta.env.VITE_CDN_URL}/angeles`
 
 export const Works = () => {
   return (
-    <div className="min-h-screen flex justify-between gap-4 bg-background py-5">
+    <div id="works" className="min-h-screen flex justify-between gap-4 bg-background py-5">
       <div className="hidden md:block h-screen sticky top-0 w-1/4 p-5">
         <h3 className="text-2xl font-lora font-bold uppercase mt-20 mb-10">
-          Works
+          Experiencias
         </h3>
         <ul>
           {experiences.map((name, index) => (
@@ -19,7 +19,6 @@ export const Works = () => {
           ))}
         </ul>
       </div>
-
       <div className="grid grid-cols-2 grid-flow-row gap-4">
         <PhotoProvider>
           {images.map((work, index) => (

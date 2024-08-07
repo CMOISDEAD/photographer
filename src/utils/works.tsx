@@ -10,20 +10,22 @@ export const experiences = [
 
 
 export const videos = [
+  // vertical videos
   {
     src: `comida.mp4`,
     title: "Video Publicitario",
   },
   {
+    src: "correpatin.mp4",
+    title: "Correpatin",
+  },
+  // horizontal videos
+  {
     src: "kayros.mp4",
     title: "Kayros",
   },
   {
-    src: "correpatin.mp4",
-    title: "Correpatin",
-  },
-  {
-    src: "pumas.mp4",
+    src: "https://res.cloudinary.com/djfou58lo/video/upload/v1722995879/angeles/videos/yahmqfpuapwwrooxmrk1.mp4",
     title: "Pumas",
   },
 ]
