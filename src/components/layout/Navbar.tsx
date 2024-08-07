@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from "framer-motion";
-import { Button, Link } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import { Logs } from "lucide-react";
 
 const duration = 0.2;
 
@@ -62,9 +61,9 @@ export const Navbar = () => {
         </ul>
       </nav>
 
-      <Button isIconOnly variant="light" className="md:hidden">
-        <Logs />
-      </Button>
+      <div className="md:hidden">
+        <ThemeSwitcher />
+      </div>
     </nav>
   );
 };
