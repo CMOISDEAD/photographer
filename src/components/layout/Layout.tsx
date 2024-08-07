@@ -26,7 +26,7 @@ export const Layout = () => {
       exit="out"
       variants={pageVariants}
       transition={{ duration: 0.5 }}
-      className="min-h-screen text-white bg-black"
+      className="min-h-screen"
     >
       <Navbar />
       <main>

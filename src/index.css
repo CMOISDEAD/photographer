@@ -4,7 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: url("/mesh-alt.png") center center fixed no-repeat;
+html.light {
+  background: url("/mesh-light.png") center center fixed no-repeat;
+  background-size: cover;
+}
+
+html.dark {
+  background: url("/mesh-dark.png") center center fixed no-repeat;
   background-size: cover;
 }
