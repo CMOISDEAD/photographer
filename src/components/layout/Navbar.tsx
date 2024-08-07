@@ -56,7 +56,7 @@ export const Navbar = () => {
           <li>
             <Link href="#contact" className="text-xs uppercase text-inherit">Contacto</Link>
           </li>
-          <li className="hidden">
+          <li>
             <ThemeSwitcher />
           </li>
         </ul>

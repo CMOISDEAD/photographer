@@ -1,8 +1,9 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Layout } from "./components/layout/Layout";
 import { Home } from "./pages/Home";
-import { Contact } from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
+
+// import { Contact } from "./pages/Contact";
 
 function App() {
   const location = useLocation();
@@ -12,7 +13,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="contact" element={<Contact />} />
+          {/* <Route path="contact" element={<Contact />} /> */}
         </Route>
       </Routes>
     </AnimatePresence>
