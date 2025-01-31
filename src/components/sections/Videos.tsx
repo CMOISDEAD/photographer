@@ -1,4 +1,5 @@
 import { videos } from "../../utils/works"
+import { useCursor } from "../layout/Cursor"
 
 export const Videos = () => {
   return (
@@ -22,10 +23,14 @@ interface Props {
 }
 
 const Video = ({ src, alt, className }: Props) => {
+  const { linkEnter, leave } = useCursor()
   const videoSrc = alt ? src : `${CDN_PATH}/videos/${src}`
 
   return (
-    <video controls className={`w-80 h-fit cursor-pointer aspect-auto ${className}`}>
+    <video controls
+      onMouseEnter={linkEnter}
+      onMouseLeave={leave}
+      className={`w-80 h-fit cursor-pointer aspect-auto ${className} rounded-md`}>
       <source src={videoSrc} type="video/mp4" />
       Your browser does not support the video tag.
     </video>

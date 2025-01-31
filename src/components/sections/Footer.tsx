@@ -1,4 +1,4 @@
-import { motion as m, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion as m, useScroll, useSpring, useTransform } from "motion/react"
 import { Link } from "@nextui-org/react"
 
 import { socials } from "../../utils/socials";
@@ -43,8 +43,8 @@ export const Footer = () => {
       </div>
       <div className="w-full flex gap-4 justify-between items-end">
         <div>
-          <p className="text-md md:text-lg">Angeles Vargas, 2024</p>
-          <p className="text-xs md:text-sm">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Angeles Vargas, {new Date().getFullYear()}</p>
+          <p className="text-xl sd:text-2xl md:text-3xl lg:text-4xl">
             angelesgonzalez5503@gmail.com
           </p>
         </div>

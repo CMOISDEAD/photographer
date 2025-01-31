@@ -1,15 +1,22 @@
 import { Link } from "@nextui-org/react"
 import { ArrowDown } from "lucide-react"
+import { useCursor } from "../layout/Cursor";
 
 export const Header = () => {
-  return (
-    <div className="p-5 h-[90dvh] flex flex-col justify-between md:h-[67dvh]">
-      <div className="w-full flex flex-1" />
+  const { linkEnter, leave } = useCursor();
 
-      <div className="w-full h-fit flex justify-between">
-        <div className="text-xs uppercase">
+  return (
+    <div className="p-5 h-screen flex flex-col justify-end">
+      <div className="w-full h-fit flex justify-between flex-col md:flex-row gap-4">
+        <div className="uppercase text-xs sm:text-sm md:text-base">
           <p>contacto:</p>
-          <Link isExternal showAnchorIcon href="mailto:angelesgonzalez5503@gmail.com" className="text-inherit text-xs font-bold">
+          <Link
+            isExternal
+            showAnchorIcon
+            href="mailto:angelesgonzalez5503@gmail.com"
+            onMouseEnter={linkEnter}
+            onMouseLeave={leave}
+            className="text-xs sm:text-sm md:text-base text-inherit font-bold">
             angelesgonzalez5503@gmail.com
           </Link>
           <p>
@@ -17,10 +24,10 @@ export const Header = () => {
           </p>
         </div>
 
-        <div className="text-xs uppercase flex content-center items-center gap-7">
+        <div className="uppercase flex content-center items-center  gap-7 text-xs sm:text-sm md:text-base">
           <p>Desliza hacia abajo<br />
             para ver mas</p>
-          <ArrowDown className="animate-bounce" />
+          <ArrowDown className="animate-bounce w-8 h-8" />
         </div>
       </div>
     </div>

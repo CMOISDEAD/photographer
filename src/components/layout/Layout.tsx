@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion"
+import { motion as m } from "motion/react"
 import { Outlet } from "react-router-dom"
 
 import { Navbar } from "./Navbar"
@@ -25,7 +25,7 @@ export const Layout = () => {
       animate="in"
       exit="out"
       variants={pageVariants}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8 }}
       className="min-h-screen"
     >
       <Navbar />

@@ -3,10 +3,13 @@ import { experiences, images } from "../../utils/works"
 import { PhotoProvider, PhotoView } from "react-photo-view"
 
 import 'react-photo-view/dist/react-photo-view.css';
+import { useCursor } from "../layout/Cursor";
 
 const CDN_PATH = `${import.meta.env.VITE_CDN_URL}/angeles`
 
 export const Works = () => {
+  const { linkEnter, leave } = useCursor();
+
   return (
     <div id="works" className="min-h-screen flex justify-between gap-4 bg-background py-5">
       <div className="hidden md:block h-screen sticky top-0 w-1/4 p-5">
@@ -19,11 +22,20 @@ export const Works = () => {
           ))}
         </ul>
       </div>
-      <div className="grid grid-cols-2 grid-flow-row gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-4 flex-grow">
         <PhotoProvider>
           {images.map((work, index) => (
             <PhotoView src={`${CDN_PATH}/images/${work.src}`} key={index}>
-              <Image isZoomed src={`${CDN_PATH}/images/${work.src}`} alt={`Angeles Vargas ${work.title} image`} radius="none" className="w-96 h-96 object-cover z-0 cursor-pointer" />
+              <Image
+                isZoomed
+                onMouseEnter={linkEnter}
+                onMouseLeave={leave}
+
+                src={`${CDN_PATH}/images/${work.src}`}
+                alt={`Angeles Vargas ${work.title} image`}
+                radius="none"
+                className="w-96 h-96 object-cover z-0 cursor-pointer"
+              />
             </PhotoView>
           ))}
         </PhotoProvider>
